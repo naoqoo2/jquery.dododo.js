@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.dododo.js"></script>
+<script>
+$(document).ready(function(){
+	$('#dododo').dododo();
+	$('#test1').dododo({'str_interval':300, 'start_interval':3000, 'size_from':'20px', 'size_to':'20px', 'top_from':'20%', 'left_from':'50%', 'top_to':'20%', 'left_to':'0%'});
+	$('#test2').dododo({'moving_time':1000, 'str_interval':500, 'start_interval':7000, 'roop_interval':3000, 'size_from':'70px', 'size_to':'20px', 'top_from':'60%', 'left_from':'60%', 'top_to':'15%', 'left_to':'60%'});
+});
+</script>
+</head>
+<body>
+
+<h1>文字列を一文字ずつ移動するjQueryプラグイン</h1>
+<p id="dododo">ドドドドドド</p>
+<p id="test1">好きな位置に移動できます</p>
+<p id="test2">フォントサイズも変更できます</p>
+
+</body>
+</html>
